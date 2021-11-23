@@ -1,0 +1,392 @@
+/*============================================
+
+NOTE:
+-----
+Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
+We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
+
+=============================================*/
+
+/* Color Switcher */
+.ColorSwitcher {
+    left: auto;
+    right: -260px;
+    transition: right .2s;
+}
+.ColorSwitcher--open {
+    right: 0;
+}
+.ColorSwitcher__control {
+    left: 0;
+    right: 100%;
+    box-shadow: -5px 0 7px rgba(0,0,0,.15);
+}
+
+/* Default classes */
+.parsley-errors-list {
+    left: auto;
+    right: 0;
+}
+
+/* Animations */
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(50%, 0, 0);
+        transform: translate3d(50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Header */
+.client-area {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.header-menu > ul ul {
+    text-align: right;
+}
+.header-menu > ul > li + li {
+    margin-left: 0;
+    margin-right: 40px;
+}
+.header-menu > ul > li + li:before {
+    left: auto;
+    right: -25px;
+}
+.header-menu ul ul {
+    left: auto;
+    right: -9999px;
+}
+.header-menu > ul > li:hover > ul {
+    right: auto;
+    left: inherit;
+}
+.header-menu ul ul li a i {
+    right: auto;
+    left: 15px;
+}
+.header-menu ul ul li a:before, 
+.header-menu ul ul li.active a:before, 
+.header-menu ul ul li:hover > a:before {
+    left: auto;
+    right: 10px;
+}
+.header-menu ul ul li a:hover:before, 
+.header-menu ul ul li.active a:before, 
+.header-menu ul ul li:hover > a:before {
+    left: auto;
+    right: 20px;
+}
+.header-menu ul ul > li:hover > ul {
+    left: auto;
+    right: 188px;
+}
+.header-menu ul ul ul:before {
+    left: auto;
+    right: -7px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.header-menu ul ul ul:after {
+    left: auto;
+    right: -10px;
+}
+.header-menu ul ul li a svg {
+    right: auto;
+    left: 15px;
+}
+
+/* Blog */
+.search-widget button {
+    right: auto;
+    left: 10px;
+}
+.list-widget li {
+    text-align: left;
+}
+.list-widget li a {
+    float: right;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 22px;
+}
+.list-widget li a:before {
+    content: '\f177';
+    left: auto;
+    right: 0;
+}
+.recent-posts-widget li img, .next-prev-post-img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.social-share li {
+    border-right: 0;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+.quote-img {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.post-share a:not(:last-child),
+.tags i,
+.tags a,
+.post-author-img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+.comment-author {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* Others */
+.single-feature-img-left .single-feature-img { text-align: right; }
+.single-feature-img-right .single-feature-img { text-align: left; }
+.text-right .single-feature-content h4:before {
+    left: 0; 
+    right: auto;
+}
+.text-left .single-feature-content h4:before { 
+    right: 0; 
+    left: auto; 
+}
+.swiper-slide-next .single-pricing-plan {
+    position: absolute;
+    right: auto;
+    left: 0;
+}
+.review-text p:after {
+    content: '\f10d';
+    left: 15px;
+    right: auto;
+}
+.review-text p:before {
+    right: auto;
+    left: 0;
+}
+.review-text:before {
+    left: auto;
+    right: -6px;
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+}
+.review-text:after {
+    left: auto;
+    right: 3px;
+    -webkit-transform: rotate(-100deg);
+            transform: rotate(-100deg);
+}
+.review-author-img {
+    padding-left: 0;
+    padding-right: 30px;
+}
+.faq-answer,
+.single-faq h3 {
+    padding-left: 0;
+    padding-right: 55px;
+}
+.single-faq h3:before {
+    left: auto;
+    right: 0;
+}
+.single-news ul li:nth-child(3):before, 
+.single-news ul li:nth-child(4):before {
+    left: auto;
+    right: 0;
+}
+.single-news ul li:nth-child(3), .single-news ul li:nth-child(4) {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 15px;
+    padding-right: 15px;
+}
+.price-and-all li + li {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.subscription-form .btn {
+    right: auto;
+    left: 10px;
+}
+.footer-widget .menu > li:before {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.contact-widget-content ul li i,
+.bottom-footer li:not(:last-child),
+.checkout-additional-option i,
+.checkout-coupon input[type=text] {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.blog-pagination li + li {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.blog-pagination svg {
+    -webkit-transform: scale(-1);
+            transform: scale(-1);
+}
+.page-title-wrap:before {
+    background: -webkit-linear-gradient(right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    background: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+.service-details ul li {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.service-details ul li:before {
+    right: 0;
+    left: auto;
+}
+
+.cupon-field button {
+    left: 10px;
+    right: auto;
+}
+.cart-totals table td {
+    text-align: left;
+}
+.returning-customer button {
+    margin-right: 0;
+    margin-left: 20px;
+}
+label input[type=checkbox], 
+label input[type=radio],
+.star-rating {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.star-rating i {
+    margin-right: 0;
+    margin-left: 3px;
+}
+.order-details-table td + td {
+    text-align: left;
+}
+.select-wrapper:after {
+    right: auto;
+    left: 10px;
+}
+.payment-method p:before {
+    left: auto;
+    right: 15px;
+}
+.in-stact i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.product-descripton .price del {
+    margin-right: 0;
+    margin-left: 8px;
+}
+.product-variations li:not(:last-child) {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.product-actions li:not(:last-child) {
+    margin-right: 0;
+    margin-left: 4px;
+}
+
+.single-theme-feature i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Responsive fix */
+@media (max-width: 1199.98px){
+    .header-menu > ul > li + li {
+        margin-right: 24px;
+    }
+    .page-title-wrap:before {
+        background: -webkit-linear-gradient(left, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+        background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-menu ul, .header-menu ul ul, .header-menu ul ul ul, .header-menu > ul, .header-menu.align-center > ul, .header-menu > ul > li > ul, .header-menu > ul > li:hover > ul, .header-menu ul ul li:hover > ul {
+        text-align: right;
+    }
+    .header-menu .submenu-button {
+        right: auto;
+        left: 0;
+        border-left: 0;
+        border-right: 1px solid rgba(120, 120, 120, 0.2);
+    }
+    .header-menu ul ul li a {
+        padding-left: 15px !important;
+        padding-right: 30px !important;
+    }
+    .header-menu ul ul ul li a {
+        padding-left: 15px !important;
+        padding-right: 45px !important;
+    }
+    .header-menu > ul > li + li {
+        margin-right: 0;
+    }
+    .header-menu ul ul > li:hover > ul {
+        right: 0;
+    }
+    .header-menu {
+        text-align: left;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-title-wrap:before {
+        background: rgba(0,0,0,0.7);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-menu {
+        text-align: left;
+    }
+}

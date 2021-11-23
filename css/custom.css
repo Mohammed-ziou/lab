@@ -1,0 +1,62 @@
+
+
+.map-design{
+    border: 5px solid #0088d5;
+}
+.map-description{
+    width: 94%;
+    margin: 0 auto;
+}
+.map-location-dropdown{
+    width: 8rem;
+    padding: 4px 3px;
+    border: 2px solid #0088d5;
+}
+
+.map-location-label-l{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 0.2rem;
+}
+
+.bannar-img {
+    height: 100%;
+    width: auto;
+}
+
+.sub-pages-header-img{
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1360px) {
+    .bannar-img {
+        width: 100%;
+    }
+}
+@media (max-width: 991.98px) {
+    .hide-login-btn{
+        display: none;
+    }
+    .map-design{
+        width: 90%;
+        margin: 0 auto 1rem;
+    }
+    .bannar-img {
+        height: 100%;
+        width: auto;
+    }
+    
+}
+@media (min-width: 991.98px) {
+    .show-login-btn{
+        display: none !important;
+    }
+}
+
+.logo a img {
+    height: 50px;
+}
